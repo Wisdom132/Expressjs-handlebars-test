@@ -1,0 +1,26 @@
+{{!-- {{#each people as |value key|}}
+  <ul>
+    <li>
+      {{key}}
+      :
+      {{value}}
+    </li>
+  </ul>
+{{/each}}
+{{#each user as |value key|}}
+  {{key}}:{{value}}
+{{/each}} --}}
+{{! nested loop  }}
+
+{{> header}}
+{{#each lists}}
+  {{#each this.items}}
+    <ul>
+      <li>
+        {{this}}
+      </li>
+    </ul>
+  {{/each}}
+{{/each}}
+
+{{> footer}}

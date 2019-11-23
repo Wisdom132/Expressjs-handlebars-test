@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>
+        i dont like this
+      </h2>
+      {{#if isShow}}
+        <p>
+          {{message}}
+        </p>
+      {{else}}
+        <h1>
+          You are not authenticated
+        </h1>
+      {{/if}}
+      {{#unless isShow}}
+        {{messege}}
+      {{/unless}}
+    </div>
+  </div>
+</div>
