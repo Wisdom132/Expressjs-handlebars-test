@@ -2,7 +2,7 @@ const express = require("express");
 const exphbs = require("express-handlebars");
 const app = express();
 
-PORT = 2200;
+const PORT = 2200;
 
 app.use(express.static("public"));
 
